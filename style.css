@@ -1,0 +1,54 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* universal */
+
+
+.auto {
+  /* vh = viewport height*/
+  height: 40vh;
+  width: 100%;
+
+  /* flexbox, display to center */
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  font-size: 200%;
+
+  padding-left: 150px;
+}
+
+span {
+  color: #f8ae30;
+}
+
+.fade {
+  /*margin: auto --> center align element */
+  /* margin: auto; */
+  height: 20vh;
+  width: 50%;
+
+  /*lays texts below one another, not inline*/
+  display: block;
+  text-align: start;
+  padding-left: 150px;
+  font-size: 100%;
+
+  /* fade-in animation */
+  animation: fadeIn 6s;
+}
+
+/* keyframes specify animation code */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -5,38 +5,61 @@ html {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* universal */
+.general {
+  padding-top: 7%;
+  padding-bottom: 7%;
 
+  /* to align the 2 containers */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* container for the auto text & descriptions */
+.general-header {
+  /* container dimensions */
+  /* vh = viewport height*/
+  height: 60vh;
+  width: 60%;
+  padding-left: 220px;
+  /* border: 5px solid #ff0000; */
+}
+
+/* container for the profile image */
+.general-header2 {
+  /* container dimensions */
+  height: 60vh;
+  width: 40%;
+  /* border: 5px solid #00ffee; */
+
+  /* to put image to center and left corner */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 .auto {
-  /* vh = viewport height*/
-  height: 40vh;
-  width: 100%;
-
-  /* flexbox, display to center */
+  /* flexbox, display to flex-start */
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: left;
   font-size: 200%;
-
-  padding-left: 150px;
 }
 
 span {
   color: #f8ae30;
 }
 
-.fade {
-  /*margin: auto --> center align element */
-  /* margin: auto; */
-  height: 20vh;
-  width: 50%;
-
+#textPad {
   /*lays texts below one another, not inline*/
   display: block;
   text-align: start;
-  padding-left: 150px;
-  font-size: 100%;
+  font-size: 120%;
+}
+
+.fade {
+  /*margin: auto --> center align element */
+  /* margin: auto; */
 
   /* fade-in animation */
   animation: fadeIn 6s;
@@ -51,4 +74,18 @@ span {
   100% {
     opacity: 1;
   }
+}
+
+#profile-pic {
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+
+  width: 300px;
+  height: 300px;
+  /* prevents image distortion */
+  overflow: hidden;
+  /* make into a circle */
+  border-radius: 50%;
+  border: 5px solid #f8ae30;
 }

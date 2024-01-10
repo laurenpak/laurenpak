@@ -16,17 +16,28 @@
 
   <script src="script.js"></script>
 
-  <!--auto typing effect-->
-  
-  <div class="auto">
-    <h1>hi! i'm <span id="auto-type"></span></h1>
-  </div>
+  <div class="general">
 
-  <div class="fade">
-    <h2>🐯 princeton CS student</h2>
-    <h2>☀️ from los angeles, california</h2>
-    <h2>📌 interests lie in web development, HCI, & UI/UX design</h2>
-    <h2>🔎 seeking frontend, backend, & full-stack SWE internships</h2>
+    <div class="general-header">
+      <!--auto typing effect-->
+      <div class="auto">
+        <h1>hi! i'm <span id="auto-type"></span></h1>
+      </div>
+
+      <div class="fade">
+        <h2 id="textPad">🐯 princeton CS student</h2>
+        <h2 id="textPad">☀️ from los angeles, california</h2>
+        <h2 id="textPad">📌 interests lie in web development, HCI, & UI/UX design</h2>
+        <h2 id="textPad">🔎 seeking frontend, backend, & full-stack SWE internships</h2>
+      </div>
+    </div>
+
+    <div class="general-header2">
+      <div class="fade">
+        <img id="profile-pic" src="profilepic.jpg" alt="profile picture">
+      </div>
+    </div>
+
   </div>
 
 
@@ -38,7 +49,7 @@
 
   <script>
     var typed = new Typed("#auto-type", {
-      strings: ["lauren pak ✨", "^1000lauren pak ✨"],
+      strings: ["lauren pak", "^1000lauren pak"],
       typeSpeed: 150,
       backSpeed: 150,
       loop: true
